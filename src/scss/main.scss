@@ -1,7 +1,16 @@
-@import 'normalize';
+@import 'vendors/normalize.scss';
+@import 'vendors/icons.scss';
 
-body {
-	main {
-		margin: 0 auto;
-	}
-}
+@import 'utils/mixins.scss';
+//@import 'utils/variables.scss';
+
+@import 'base/base.scss';
+
+
+//@import 'components/title-section.scss';
+
+@import 'layout/home.scss';
+@import 'layout/about.scss';
+@import 'layout/works.scss';
+@import 'layout/socials.scss';
+@import 'layout/contact.scss';

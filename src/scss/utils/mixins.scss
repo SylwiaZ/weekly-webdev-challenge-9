@@ -1,0 +1,25 @@
+@mixin heading($size, $text, $font-color, $height, $width, $bg-color, $vertical) {
+    font-size: $size;
+    text-transform: $text;
+    text-align: center;
+    color: $font-color;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        height: $height;
+        width: $width;
+        background-color: $bg-color;
+        position: absolute;
+        bottom: $vertical;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@mixin site-title($size, $color) {
+    font-family: 'Dancing Script', cursive;
+    font-size: $size;
+    font-style: italic;
+    color: $color;
+}

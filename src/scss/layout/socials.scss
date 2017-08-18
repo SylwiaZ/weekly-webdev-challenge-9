@@ -1,0 +1,58 @@
+.follow {
+
+    .heading {
+        @include heading(25px, uppercase, #666, 3px, 62px, #d07c7c, -22px);
+        margin-bottom: 83px;
+    } 
+
+    .socials { 
+        text-align: center;
+
+        .socials-item {
+            list-style: none;
+            display: inline-block;
+            padding: 0 32px;
+        }
+        
+        .icon {
+            height: 53px;
+            width: 53px;
+            font-size: 25px;
+            color: #848282;
+            text-decoration: none;
+            border-radius: 50%;
+            display: block;
+            position: relative;
+            
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin: 0;
+            }
+            
+            &::after {
+                content: '';
+                display: none;
+                height: 65px;
+                width: 65px;
+                border-radius: 50%;
+                border: 1px solid #e6b5b5;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            &:hover::after {
+                display: block;
+            }
+            
+            &:hover {
+                color: #fff;
+                background-color: #e6b5b5;
+            }
+        }
+    }
+} 

@@ -1,0 +1,6 @@
+.works {
+    .heading {
+        @include heading(25px, uppercase, #666, 3px, 62px, #d07c7c, -22px);
+        margin-bottom: 50px;
+    } 
+} 

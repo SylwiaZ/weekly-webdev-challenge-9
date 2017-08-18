@@ -1,0 +1,14 @@
+.contact {
+    background: url('../../asset/img/bg-contact.jpg') center no-repeat;
+    padding-top: 70px;
+    
+    .container {
+        text-align: center;
+    }
+    
+    .heading {
+        @include heading(25px, uppercase, #666, 3px, 62px, #d07c7c, -22px);
+        margin-bottom: 50px;
+    } 
+    
+} 
